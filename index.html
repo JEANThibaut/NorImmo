@@ -24,10 +24,11 @@
 
 <body>
 
-  <header class="w-100 bg-danger header">
-    <!-- <img="" src="" alt="">-->
-  <h2 class="text-center">Mon Super logo</h2>
-  </header>
+<header class="w-100 header">
+  <div class="h-100 d-flex justify-content-center align-items-center">
+   <img  src="img/logoimmo.png" alt="lolo_NorImmo" title="logo_NorImmo">
+  </div>
+</header>
 
   <!-- Add your site or application content here -->
   <nav class="nav nav-pills flex-column flex-sm-row my-2 bg-">
@@ -37,9 +38,41 @@
     <a class="flex-sm-fill text-sm-center nav-link mx-4" href="contact.html">Contact</a>
   </nav>
 
-  <Section>
-
-  </Section>
+<Section>
+   <!-- carousel -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <h1>Voici nos projets</h1>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="" alt="" class="d-block w-80">
+          <p>Projet Maison 1</p>
+        </div>
+        <div class="carousel-item">
+          <img src="" alt="" class="d-block w-80">
+          <p>Projet Maison 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="" alt="" class="d-block w-80">
+          <p>Projet Maison 3</p>
+        </div>
+        <div class="carousel-item">
+          <img src="" alt="" class="d-block w-80">
+          <p>Projet Maison 4</p>
+        </div>
+  </div>
+     <!-- Section: nav within carousel -->
+    <nav>
+      <a class="carousel-control-préc" href="#" role="button" data-slide="précédent">
+        <span class="carousel-control-précédent-icon" aria-hidden="true"></span>
+        <span class="sr-only">Préc.</span>
+      </a>
+      <a class="carousel-control-suivant" href="#" role="button" data-slide="suivant">
+        <span class="carousel-control-suivant-icon" aria-hidden="true"></span>
+        <span class="sr-only">Suivant</span>
+      </a>
+    </nav>
+  </div>
+</Section>
 
   <footer class="bg-dark text-center text-white">
     <div>
@@ -74,10 +107,6 @@
   <script src="js/main.js"></script>
   
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
