@@ -37,6 +37,33 @@
   </nav>
 
   <Section>
+    <div class= "container">
+      <!-- Input M2 -->
+      <div>
+        <label for="surface"> Surface en m2</label>
+        <input type="text" id="user_surface" name="user_surface">
+      </div>
+       <!-- Input Chambers -->
+      <div>
+        <label for="chambers"> Nombre de chambres</label>
+        <input type="text" id="user-chambers" name="user_chambers">
+      </div>
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Choisisser votre Matériaux
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Bois</a></li>
+          <li><a class="dropdown-item" href="#">Brique</a></li>
+          <li><a class="dropdown-item" href="#">Parpaing</a></li>
+        </ul>
+        <div class="select"></div>
+      </div>
+    </div>
+
+
+
 
   </Section>
 
@@ -66,7 +93,9 @@
       <!-- Section: Social media -->
   
   </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="js/simulator.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
