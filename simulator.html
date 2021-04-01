@@ -41,12 +41,13 @@
       <!-- Input M2 -->
       <div>
         <label for="surface"> Surface en m2</label>
-        <input type="text" id="user_surface" name="user_surface">
+        <input type="number" id="user_surface" name="user_surface">
       </div>
+      
        <!-- Input Chambers -->
       <div>
         <label for="chambers"> Nombre de chambres</label>
-        <input type="text" id="user-chambers" name="user_chambers">
+        <input type="number" id="user_chambers" name="user_chambers">
       </div>
       <!-- Dropdown Menu -->
       <div class="dropdown">
@@ -59,6 +60,10 @@
           <li><a class="dropdown-item" href="#">Parpaing</a></li>
         </ul>
         <div class="select"></div>
+      </div>
+      <!-- Submit button -->
+      <button onclick="Price()" >Prix</button>
+        
       </div>
     </div>
 
