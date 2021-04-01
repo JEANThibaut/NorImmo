@@ -3,7 +3,7 @@
 
 for ( let acc of accs) {;
     acc.onclick = function() {
-        this.classList.toggle("active");
+        this.classList.toggle("activated");
         //récupérer le prochain élément après le bouton
         let answer = this.nextElementSibling;
              // add display block or none / remove display 
