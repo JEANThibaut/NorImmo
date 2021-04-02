@@ -86,13 +86,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-header
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+   .colorFirst{
+  background-color: #F18E31;
+}
+.colorSecond{
+ background-color: #269191;
+}
+.active {
+  background-color: #269191 !important
+}
+   header
 {
   height : 20vh;
   background-color : #F18E31;
 }
+<<<<<<< HEAD
 
 
+=======
+footer{
+  height: 20vh;
+  
+}
+>>>>>>> 800b7ac053d7344caf714c59810caa92f8ef4125
 /* ==========================================================================
    Helper classes
    ========================================================================== */

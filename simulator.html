@@ -25,18 +25,41 @@
 <body>
   <header class="w-100 bg-danger header">
     <!-- <img="" src="" alt="">-->
-  <h2 class="text-center">Mon Super logo</h2>
-  </header>
-
-  <!-- Add your site or application content here -->
-  <nav class="nav nav-pills flex-column flex-sm-row my-2 bg-">
-    <a class="flex-sm-fill text-sm-center nav-link  mx-4"  aria-current="page" href="index.html">Acceuil</a>
+  <h1 class="text-center">Mon Super logo</h1>
+   <!-- Add your site or application content here -->
+   <nav class="nav nav-pills flex-column flex-sm-row my-2 bg-">
+    <a class="flex-sm-fill text-sm-center nav-link mx-4"  aria-current="page" href="index.html">Acceuil</a>
     <a class="flex-sm-fill text-sm-center nav-link active mx-4" href="simulator.html">Simulateur</a>
     <a class="flex-sm-fill text-sm-center nav-link mx-4" href="faq.html">F.A.Q</a>
     <a class="flex-sm-fill text-sm-center nav-link mx-4" href="contact.html">Contact</a>
   </nav>
+  </header>
 
   <Section>
+    <div class= "container">
+      <!-- Input M2 -->
+      <div class="mb-3">
+        <label for="surface"> Surface en m2</label>
+        <input type="number" id="user_surface" name="user_surface">
+      </div>
+      
+       <!-- Input Chambers -->
+      <div class="mb-3">
+        <label for="chambers"> Nombre de chambres</label>
+        <input type="number" id="user_chambers" name="user_chambers">
+      </div>
+      <!-- Select Menu -->
+      <select class="form-select w-75 mb-3" aria-label="Default select example" id="selected" >
+        <option selected >Matériaux</option>
+        <option value="0.15">Bois</option>
+        <option value="0.3">Brique</option>
+        <option value="0.2">Parpaing</option>
+      </select>
+      <!-- Submit button -->
+      <button onclick="Price()" class="mb-3" >Prix</button>
+        
+      </div>
+    </div>
 
   </Section>
 
@@ -65,8 +88,14 @@
       </section>
       <!-- Section: Social media -->
   
+
+
+
+
   </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="js/simulator.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
