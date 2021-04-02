@@ -92,7 +92,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
-   .colorFirst{
+.colorFirst{
   background-color: #F18E31;
 }
 .colorSecond{
@@ -101,20 +101,11 @@ body{
 .active {
   background-color: #269191 !important
 }
-   header
-{
-  height : 20vh;
-  background-color : #F18E31;
-}
-<<<<<<< HEAD
 
-
-=======
 footer{
-  height: 20vh;
-  
+  height: 20vh; 
 }
->>>>>>> 800b7ac053d7344caf714c59810caa92f8ef4125
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
