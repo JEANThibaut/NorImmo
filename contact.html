@@ -18,6 +18,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -37,7 +39,21 @@
 
   <Section>
 
+    <div class="contact">
+      <div>
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" maxlength="400" onkeyup="keyPress()" onfocus="clearContents(this)">Votre message
+        </textarea>
+      </div>  
+      <div id="dfCase">Il vous reste 400 caractères</div>
+      <div id="nbCase"></div>
+      <div id="msgInsult" class="text-danger"></div>
+    
+      <button type="button" class="btn colorSecond mt-5" id="submit">Envoyer</button>
+
+    </div>
   </Section>
+
 
   <footer class="bg-dark text-center text-white">
     <div>
@@ -69,7 +85,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="js/contact.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
