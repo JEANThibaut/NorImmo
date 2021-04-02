@@ -38,7 +38,13 @@
   </header>
 
   <Section>
+    <!-- Phone number -->
+    <label for="phone">Numéro de téléphone :</label>
 
+    <input type="tel" id="phone" name="phone" pattern="^((\+)33|0)[1-9](\d{2}){4}$" required>
+    
+    <!-- Message block -->
+    <form method="get" class="form">
     <div class="contact">
       <div>
         <label for="message">Votre message :</label>
@@ -49,9 +55,9 @@
       <div id="nbCase"></div>
       <div id="msgInsult" class="text-danger"></div>
     
-      <button type="button" class="btn colorSecond mt-5" id="submit">Envoyer</button>
-
+      <input type="submit" class="btn colorSecond mt-5" id="submit" value="Envoyer">
     </div>
+  </form>
   </Section>
 
 
