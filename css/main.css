@@ -92,7 +92,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
-   .colorFirst{
+.colorFirst{
   background-color: #F18E31;
 }
 .colorSecond{
@@ -101,10 +101,7 @@ body{
 .active {
   background-color: #269191 !important
 }
-   header
-{
-  height : 20vh;
-}
+
 footer{
   height: 20vh;
   

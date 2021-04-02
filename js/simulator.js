@@ -7,7 +7,6 @@ function Price(){
     //Calcul du prix de la surface
     let surfacePrice=userSurface * 1000;
     
-
     //Récupérer la valeur de l'élement HTML user_chambers
     let userChambers=document.getElementById("user_chambers").value;
     
@@ -25,6 +24,7 @@ function Price(){
     console.log("total "+total)
 
 }
+
 
 
 
