@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Estimation</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,39 +37,41 @@
   </header>
 
   <Section>
-    <div class="main">
+    <div class="main my-2 mx-1">
       <div class= "main_container">
         <!-- Input M2 -->
         <div class="mb-3">
           <div>
             <label for="user_surface"> Surface en m2</label>
           </div>
-          <input type="number" id="user_surface" name="user_surface">
+          <input type="number" id="user_surface" name="user_surface" onfocus="this.value=''">
         </div>
-        
+        <p id="msgSurface" class="text-danger"></p>
         <!-- Input Chambers -->
-        <div class="mb-3">
+        <div class="mb-3 mb-5">
           <div>
             <label for="user_chambers"> Nombre de chambres</label>
           </div>
-          <input type="number" id="user_chambers" name="user_chambers">
+          <input type="number" id="user_chambers" name="user_chambers" onfocus="this.value=''">
         </div>
         <!-- Select Menu -->
-        <select class="form-select w-75 mb-3" aria-label="Default select example" id="selected" >
-          <option selected >Matériaux</option>
+        <select class="form-select w-75 mb-3" aria-label="Default select example" id="selected" name="selected" >
+          <option selected value="0">Matériaux</option>
           <option value="0.15">Bois</option>
           <option value="0.3">Brique</option>
           <option value="0.2">Parpaing</option>
         </select>
+        <div id="msgSelect" class="mb-3 text-danger" ></div>
         <!-- Submit button -->
         <button type="button" class="btn colorSecond text-white"  onclick="Price()">Estimation</button>
-        <!-- <button type="button" onclick="Price()" class="mb-3" >Prix</button> -->
+        
           
       </div>
     
 
         <div class="main_container">
-          <p></p>
+          <h2> Votre Estimation</h2>
+          <div id="result"></div> 
         </div>
     </div>
 
