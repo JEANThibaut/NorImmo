@@ -1,0 +1,18 @@
+.carousel
+{
+    overflow : hidden;
+    position : relative;
+}
+
+.carousel .carousel-item img
+{
+    height : auto;
+    max-width : 80%;
+}
+
+.carousel .carousel_button
+{
+    cursor : pointer;
+    width : 20%;
+    height : 20%;
+}
