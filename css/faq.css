@@ -1,0 +1,17 @@
+.activated, .accordion:hover {
+    background-color:rgb(38, 90, 145);
+}
+.answer {
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 0.8rem;
+    color: #777;
+    float: right;
+    margin-left: 1vh;
+}
+.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
