@@ -4,6 +4,10 @@
     position : relative;
 }
 
+.carousel
+{
+    border : solie black 5px;
+}
 .carousel .carousel-item img
 {
     height : auto;
@@ -12,7 +16,10 @@
 
 .carousel .carousel_button
 {
-    cursor : pointer;
-    width : 20%;
-    height : 20%;
+    width : 100%;
+    height : 100%;
 }
+
+.carousel-item {
+    display: none;
+  }
