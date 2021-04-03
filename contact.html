@@ -29,7 +29,7 @@
     <!-- <img="" src="" alt="">-->
   <h1 class="text-center">Mon Super logo</h1>
    <!-- Add your site or application content here -->
-   <nav class="nav nav-pills flex-column flex-sm-row my-2 bg-">
+   <nav class="nav nav-pills flex-column  flex-sm-row my-2 bg-">
     <a class="flex-sm-fill text-sm-center nav-link mx-4"  aria-current="page" href="index.html">Acceuil</a>
     <a class="flex-sm-fill text-sm-center nav-link mx-4" href="simulator.html">Simulateur</a>
     <a class="flex-sm-fill text-sm-center nav-link mx-4" href="faq.html">F.A.Q</a>
@@ -37,15 +37,29 @@
   </nav>
   </header>
 
-  <Section>
+  <Section class= "form">
+    <!-- Name -->
+    <!-- <input class="input" type="text" id="name" name="name" required value="Entrer votre Nom" onfocus="clearContents(this)" minlength="2" maxlength="40"> -->
+    <!-- Forename -->
+    <!-- <input class="input" type="text" id="forename" name="forename" required value="Entrer votre Prénom" onfocus="clearContents(this)" minlength="2" maxlength="40"> -->
     <!-- Phone number -->
-    <label for="phone">Numéro de téléphone :</label>
-
-    <input type="tel" id="phone" name="phone" pattern="^((\+)33|0)[1-9](\d{2}){4}$" required>
+    <!-- <input type="tel" id="phone" name="phone" pattern="^((\+)33|0)[1-9](\d{2}){4}$" required value="Entrer votre téléphone" onfocus="clearContents(this)"> -->
     
     <!-- Message block -->
     <form method="get" class="form">
     <div class="contact">
+      <div class="form">
+        <label for="name">Entrer votre nom :</label>
+        <input type="text" name="name" id="name" required minlength="2" maxlength="50">
+      </div>  
+      <div class="form">
+        <label for="name">Entrer votre Prénom :</label>
+        <input type="text" name="forename" id="forename" required minlength="2" maxlength="50">
+      </div>  
+      <div class="form">
+      <label for="name">Votre téléphone : </label>
+      <input type="tel" id="phone" name="phone" pattern="^((\+)33|0)[1-9](\d{2}){4}$" required >
+      </div>
       <div>
         <label for="message">Votre message :</label>
         <textarea id="message" name="message" maxlength="400" onkeyup="keyPress()" onfocus="clearContents(this)">Votre message
@@ -71,18 +85,17 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
+        <a class="btn btn-outline-light btn-floating m-1 " href="#!" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
       </section>
       <!-- Section: Social media -->
   

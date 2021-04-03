@@ -1,6 +1,8 @@
 
-// Fonction Textarea
 
+
+
+// Fonction Textarea
 let btn=document.getElementById("submit");
 let insults=["connard","connasse","salop","salope","pute","putain","con",
                 "sexe","sex","batard","merde", "enculé", "enculer", "troudebal", "pignouf",

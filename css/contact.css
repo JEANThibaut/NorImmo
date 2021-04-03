@@ -1,11 +1,9 @@
-section{
+.form{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
-#phone{
-    width: 25vw;;
-}
+
 
 .contact{
     display:flex;
