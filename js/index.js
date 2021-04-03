@@ -1,11 +1,4 @@
-//class Carousel {
-    //parametre 1 : nombre élément visible
-    //paramètre 2 : nombre élemnt visible dans slide
-    //parametre 3 : le slide est accompagné d'un texte adapté} 
-
-
 //precBtn.addEvenListener('click', function() {list_Item.style.transition = "transform 0.4s ease-in-out";i++;})//
-//for(let item of selectItems) 
 //suivBtn.addEvenListener('click', function() {list_Item.style.transition = "transform 0.4s ease-in-out";i--;})
 
 let imgIndex = 0;
