@@ -1,3 +1,7 @@
+img{
+  max-width: 50%;
+  height: auto;
+}
 
 /* carousel container */
 .carousel-container {
@@ -12,6 +16,7 @@
   display : flex;
   justify-content : center;
   text-align : center;
+
 }
 
 /* i give a style to previous and next buttons */
