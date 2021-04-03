@@ -1,24 +1,22 @@
-//class Carousel {
-    //parametre 1 : nombre élément visible
-    //paramètre 2 : nombre élemnt visible dans slide
-    //parametre 3 : le slide est accompagné d'un texte adapté} 
+//precBtn.addEvenListener('click', function() {list_Item.style.transition = "transform 0.4s ease-in-out";i++;})//
+//suivBtn.addEvenListener('click', function() {list_Item.style.transition = "transform 0.4s ease-in-out";i--;})
 
-let i=0;
-let list_Item= document.getElementsByClassName("carousel-item");
-let time = 5000;
+let imgIndex = 0;
+carouselAuto();
 
-function changeImg()
+function carouselAuto() 
 {
-
-    if (i <list_Item.length -1){
-        i++
-    }
-    else {
-        i = 0;
-    }
-
-    setTimeout("changeImg", time)
+  let i;
+  let imgList = document.getElementsByClassName("carousel-item");
+  for (i = 0; i < imgList.length; i++) {
+    imgList[i].style.display = "none";
+  }
+  imgIndex++;
+  if (imgIndex > imgList.length) {
+      imgIndex = 1;
+  }
+  imgList[imgIndex-1].style.display = "block";
+  setTimeout(carouselAuto, 2000); // Change image every 2 seconds
 }
 
-window.onload = changeImg;
 

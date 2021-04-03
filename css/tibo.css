@@ -43,3 +43,9 @@ table{
     margin-left: 10vw;
     text-align: center;
 }
+label{
+    display:block;
+}
+textarea{
+    display:block;
+}
