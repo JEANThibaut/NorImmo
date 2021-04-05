@@ -93,7 +93,9 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
-
+nav {
+  width: 100%;
+}
 nav a{
   color:#269191;
 }
@@ -107,7 +109,19 @@ nav a{
 .active {
   background-color: #269191 !important
 }
-
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+header .logo{
+  content:url("../img/Nmini.png");
+  width: 10%;
+  height: auto;
+  
+ 
+} 
 footer{
   height: 20vh; 
 }

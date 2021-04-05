@@ -1,49 +1,68 @@
-img{
-  max-width: 50%;
-  height: auto;
-}
+/* Logo style */
+ /* .logo {
+  display : flex;
+  justify-content : center; 
+   align-items : flex-start; 
+   width :100%; 
+   height: 10%; 
+}  */
+
+/* header img
+{
+  width : 15%;
+  height : auto;
+} */
 
 /* carousel container */
 .carousel-container {
-  max-width: 100%;
-  height : 100vh;
+  max-width: 90%;
   margin: auto;
+  overflow : hidden;
+  position : relative;
+  border : solid black 1px;
+  /* background-color : grey; */
 }
 
-/* Here i hide images */
-.carousel-item {
-  display: none;
-  display : flex;
-  justify-content : center;
+/* Here I hide images */
+.carousel-container .carousel-item {
+  display: flex;
+  justify-content:flex-end;
   text-align : center;
+  max-width : 100%;
+  height : auto;
+  margin-top : 20px;
 
 }
 
-/* i give a style to previous and next buttons */
-.prec, .suiv {
-  cursor: pointer;
-  top: 50%;
-  width: 100%;
-  color: red;
+.carousel-container .carousel-item p {
+  height: 5em;
+  background-color : grey;
+  opacity : 0.6;
+}
+
+
+
+
+/* i give a style and position to previous and next buttons */
+.carousel-container .carousel_button button{
+  border-radius : 50px;
+  border : 0;
   font-weight: bold;
-  font-size: 1em;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  cursor : pointer;
+  width : 30px;
+  height : 30px;
+  position : relative;
+  bottom : 50%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+
+/* On hover, black background color with a little bit see-through */
+.Prec:hover, .Suiv:hover {
   background-color: blue;
 }
 
-/* Caption text */
-.text {
-  color: white;
-  font-size: 1em;
-  padding: 10px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
+
+article{
+  width : 80%;
+  margin : auto;
 }

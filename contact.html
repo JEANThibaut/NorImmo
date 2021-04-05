@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Contact</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,8 +26,7 @@
 
 <body>
   <header class="w-100 colorFirst header">
-    <!-- <img="" src="" alt="">-->
-  <h1 class="text-center">Mon Super logo</h1>
+    <div class="logo"></div>
    <!-- Add your site or application content here -->
    <nav class="nav nav-pills flex-column  flex-sm-row my-2 bg-">
     <a class="flex-sm-fill text-sm-center nav-link mx-4"  aria-current="page" href="index.html">Acceuil</a>
@@ -38,23 +37,18 @@
   </header>
 
   <Section class= "form">
-    <!-- Name -->
-    <!-- <input class="input" type="text" id="name" name="name" required value="Entrer votre Nom" onfocus="clearContents(this)" minlength="2" maxlength="40"> -->
-    <!-- Forename -->
-    <!-- <input class="input" type="text" id="forename" name="forename" required value="Entrer votre Prénom" onfocus="clearContents(this)" minlength="2" maxlength="40"> -->
-    <!-- Phone number -->
-    <!-- <input type="tel" id="phone" name="phone" pattern="^((\+)33|0)[1-9](\d{2}){4}$" required value="Entrer votre téléphone" onfocus="clearContents(this)"> -->
-    
+   
     <!-- Message block -->
     <form method="get" class="form">
     <div class="contact">
       <div class="form">
-        <label for="name">Entrer votre nom :</label>
-        <input type="text" name="name" id="name" required minlength="2" maxlength="50">
+        <label for="name">Entrer votre Nom :</label>
+        <input type="text" name="name" id="name" class="nbCase" onkeyup="numberCase(name)" required minlength="2" maxlength="50">
+        <div class="msgCase"></div>
       </div>  
       <div class="form">
         <label for="name">Entrer votre Prénom :</label>
-        <input type="text" name="forename" id="forename" required minlength="2" maxlength="50">
+        <input type="text" name="forename" id="forename" class="nbCase" onkeyup="numberCase(name)" required minlength="2" maxlength="50">
       </div>  
       <div class="form">
       <label for="name">Votre téléphone : </label>
@@ -62,14 +56,14 @@
       </div>
       <div>
         <label for="message">Votre message :</label>
-        <textarea id="message" name="message" maxlength="400" onkeyup="keyPress()" onfocus="clearContents(this)">Votre message
-        </textarea>
+        <textarea id="message" class="textarea" name="message" maxlength="400" onkeyup="textarea()"></textarea>
       </div>  
       <div id="dfCase">Il vous reste 400 caractères</div>
       <div id="nbCase"></div>
       <div id="msgInsult" class="text-danger"></div>
+      <div id="msgNbCase" class="text-danger"></div>
     
-      <input type="submit" class="btn colorSecond mt-5" id="submit" value="Envoyer">
+      <input type="submit" class="btn mt-5" id="submit" value="Envoyer">
     </div>
   </form>
   </Section>
