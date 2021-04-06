@@ -1,6 +1,4 @@
-//precBtn.addEvenListener('click', function() {list_Item.style.transition = "transform 0.4s ease-in-out";i++;})//
-//suivBtn.addEvenListener('click', function() {list_Item.style.transition = "transform 0.4s ease-in-out";i--;})
-
+//carousel atumatic
 let imgIndex = 0;
 carouselAuto();
 
@@ -16,7 +14,29 @@ function carouselAuto()
       imgIndex = 1;
   }
   imgList[imgIndex-1].style.display = "block";
-  setTimeout(carouselAuto, 20000); // Change image every 2 seconds
+  setTimeout(carouselAuto, 6000); // Change images every 2 seconds
 }
 
+//carousel by nav
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plus(n) {
+  showSlides(slideIndex += n);
+}
+
+function less(n) {
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("carousel-item");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+} 
 
